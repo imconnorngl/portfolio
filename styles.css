@@ -231,19 +231,108 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
+:root {
+	--transparent-grey: rgba(0,0,0,0.5); 
+}
+
+body { 
+	font-family: "Helvetic Neue", Sans-serif; 
+}
+
+#window, #slide-container {
+ 	width: 400px;
+}
+
+#slide-container {
+    height: auto;
+    width: auto;
+	overflow: hidden; 
+	position: relative; 
+}
+
+.slide {
+	width: 100%; 
+	min-height: 200px; 
+}
+
+.slides {
+	display: block; 
+}
+
 .arrow {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-  }
-  
-  .right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-  }
-  
-  .left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-  }
+	color: white; 
+	font-size: 26px; 
+	position: absolute; 
+	top: 50%; 
+	transform: translate(0%, -50%); 
+	padding: 16px; 
+	background-color: rgba(0,0,0,0); 
+	transition: background-color 0.3s ease; 
+}
+
+.arrow:hover {
+	cursor: pointer;
+	background-color: var(--transparent-grey); 
+}
+
+#next {
+	left: 100%; 
+	transform: translate(-100%, -50%); 
+	border-radius: 4px 0px 0px 4px; 
+}
+
+#previous {
+	border-radius: 0px 4px 4px 0px; 
+}
+
+#text-bar {
+	background-color: var(--transparent-grey);
+	width: 100%;
+	height: 36px; 
+	position: absolute; 
+	top: 100%;
+	transform: translate(0%, -100%);  
+	text-align: center; 
+	height: 36px;
+  line-height: 36px;
+}
+
+#place {
+	padding: 0px;
+	margin: 0px; 
+	color: white;
+	position: relative;
+	display: inline-block;
+}
+
+#dotsContainer {
+	width: 100%;
+	height: 20px; 
+	text-align: center; 
+}
+
+.dots {
+	width: 8px;
+	height: 8px;
+	background-color: rgba(0,0,0,0.2); 
+	border-radius: 100%; 
+	display: inline-block; 
+	margin: 8px 2px; 
+}
+
+.dots:hover {
+	cursor: pointer; 
+	background-color: rgba(0,0,0,0.4);
+}
+
+.activeDot {
+	background-color: rgba(0,0,0,0.6); 
+}
+
+.disable-select {
+    user-select: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+}

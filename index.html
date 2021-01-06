@@ -29,8 +29,7 @@
   <div class="w3-bar w3-black w3-hide-small">
     <a href="https://instagram.com/imconnorngl" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
     <a href="https://twitter.com/imconnorngl" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
-    <a href="https://www.linkedin.com/in/connorkieranlewis" class="w3-bar-item w3-button"><i
-        class="fa fa-linkedin"></i></a>
+    <a href="https://www.linkedin.com/in/connorkieranlewis" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
   </div>
 
   <div class="w3-content" style="max-width:1600px">
@@ -98,8 +97,28 @@
           </div>
           <ul class="w3-ul w3-white">
             <li class="w3-padding-16">
+              <div id="slide-container">
+                <div class="slides">
+                  <img class="slide" src="img/gallery/1.png"> 
+                  <img class="slide" src="img/gallery/7.png"> 
+                  <img class="slide" src="img/gallery/2.png"> 
+                  <img class="slide" src="img/gallery/3.png"> 
+                  <img class="slide" src="img/gallery/9.png"> 
+                  <img class="slide" src="img/gallery/4.png"> 
+                  <img class="slide" src="img/gallery/6.png"> 
+                  <img class="slide" src="img/gallery/8.png"> 
+                  <img class="slide" src="img/gallery/5.png"> 
+                </div>
 
-            </li>
+
+                <a id="previous" class="arrow disable-select">&#10094</a>
+                <a id="next" class="arrow disable-select">&#10095</a>
+                <div id="text-bar">
+                  <p id="place"></p>
+                </div>
+              </div>
+              <div id="dotsContainer"></div>
+           </li>
           </ul>
         </div>
       </div>
@@ -149,7 +168,7 @@
               <img src="img/clients/ranked.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
               <span class="w3-large">Competitive Bedwars</span>
               <br>
-              <span>""</span>
+              <span>"Connor has helped to develop our Ranked Bedwars bot to the best it can be. All our suggestions and issues he has managed to fix instantly without any problems."</span>
             </li>
           </ul>
         </div>
@@ -159,10 +178,10 @@
           <div class="w3-container w3-padding w3-black">
             <h4>Follow Me</h4>
           </div>
-          <div class="w3-container w3-xlarge w3-padding">
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
+          <div class="w3-container w3-xlarge w3-padding disable-select">
+            <i class="fa fa-instagram w3-hover-opacity disable-select"></i>
+            <i class="fa fa-twitter w3-hover-opacity disable-select"></i>
+            <i class="fa fa-linkedin w3-hover-opacity disable-select"></i>
           </div>
         </div>
         <hr>
@@ -176,7 +195,8 @@
     <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i
         class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   </footer>
-
 </body>
 
 </html>
+
+<script src="js/gallery.js"></script>
