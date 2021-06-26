@@ -25,7 +25,17 @@ function showSlide(position) {
 
   const location = locations[index]
 
-  $(".slide").attr("src", location.asset)
+  if(location.asset.includes(".mp4")) {
+    $(".slide.video").css("display", "block")
+    $(".slide.img").css("display", "none")
+    $(".slide.video").find("source").attr("src", location.asset)
+    $(".slide.video")[0].load()
+  } else {
+    $(".slide.img").css("display", "block")
+    $(".slide.video").css("display", "none")
+    $(".slide.img").attr("src", location.asset)
+  }
+
   $("#text-bar").find("a").html(location.display)
   
   if(location.url) $("#text-bar").find("a").attr("href", location.url)
