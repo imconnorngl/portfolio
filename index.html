@@ -13,6 +13,7 @@
 <meta property="og:image" content="img/yt.jpg">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <body class="w3-light-grey">
 
@@ -30,11 +31,11 @@
 
     <header class="w3-container w3-center w3-padding-48 w3-white">
       <h1 class="w3-xxxlarge"><b>CONNOR LEWIS</b></h1>
-      <h6>Software development & programming <span class="w3-tag">enthusiast</span> </h6>
+      <h6>Website development & programming <span class="w3-tag">enthusiast</span> </h6>
     </header>
 
     <header class="w3-display-container w3-wide" id="home">
-      <img class="w3-image" src="img/background.jpg" alt="Fashion Blog" width="9800" height="1060">
+      <img class="w3-image" src="img/background.png" alt="Fashion Blog" width="9800" height="1060">
       <div class="w3-display-left w3-padding-large">
         <h1 class="w3-text-white"></h1>
         <h1 class="w3-jumbo w3-text-white w3-hide-small"><b></b></h1>
@@ -49,7 +50,7 @@
           <div class="w3-container w3-padding w3-black">
             <h4>Previous Work</h4>
           </div>
-          <ul class="w3-ul w3-white">
+          <ul class="w3-ul w3-white" style="padding-bottom: 30px;">
             <li class="w3-padding-16">
               <span class="w3-large">ELO Discord Bots</span>
               <br>
@@ -80,8 +81,7 @@
                 software with my newly released <a href="https://statsify.net/overlay">Statsify Overlay</a>, which now
                 has over 3000 unique downloads. I am proud to say I have some of the best experience in the world of
                 displaying images from Discord bots with many custom functions I have created to assist myself in this.
-                <br><br>
-                </l></span>
+                </span>
             </li>
           </ul>
         </div>
@@ -93,23 +93,12 @@
           <ul class="w3-ul w3-white">
             <li class="w3-padding-16">
               <div id="slide-container">
-                <div class="slides">
-                  <img class="slide" src="img/gallery/1.png">
-                  <img class="slide" src="img/gallery/7.png">
-                  <img class="slide" src="img/gallery/2.png">
-                  <img class="slide" src="img/gallery/3.png">
-                  <img class="slide" src="img/gallery/9.png">
-                  <img class="slide" src="img/gallery/4.png">
-                  <img class="slide" src="img/gallery/6.png">
-                  <img class="slide" src="img/gallery/8.png">
-                  <img class="slide" src="img/gallery/5.png">
-                </div>
-
-
+                <img class="slide">
+                
                 <a id="previous" class="arrow disable-select">&#10094</a>
                 <a id="next" class="arrow disable-select">&#10095</a>
                 <div id="text-bar">
-                  <p id="place"></p>
+                  <a id="text-content" target="_blank"></a>
                 </div>
               </div>
               <div id="dotsContainer"></div>
@@ -127,9 +116,11 @@
           <img src="img/yt.jpg" alt="Jane" style="width:100%">
           <div class="w3-container w3-black">
             <h4>Connor Lewis</h4>
-            <p>I'm a 17 year old developer who works with clients throughout the youtube industry to enhance their
-              community experience developing sites, bots and programs for affordable prices while maintaining high
-              standards</p>
+            <p>I'm a 17 year old developer who works with clients throughout the industry to enhance their
+              community experience developing responsive websites and discord bots while offering a premium service. 
+              I have over 4 years programming experience working with a huge amount of companies with hundereds
+              of happy clients throughout the world. I work to ensure my products are delivered on time and to a high standard
+              while maintaining a stong line of communication with the client.</p>
           </div>
         </div>
         <hr>
@@ -192,7 +183,7 @@
 
 
   <footer class="w3-container w3-dark-grey" style="padding:32px">
-    <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i
+    <a onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i
         class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   </footer>
 </body>

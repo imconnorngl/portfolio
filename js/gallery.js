@@ -1,46 +1,43 @@
-var index = 0; 
-var locations = ["ELO Bot: Pending Score Request", "ELO Bot: Accepted Score Request", "ELO Bot: Queue Filling", "ELO Bot: Team Picking",  "ELO Bot: Profile Command", "Statsify (Hypixel Stat Bot): Ping", "General Bot: Quick Math","Statsify (Hypixel Stat Bot): Bedwars Profile Command", "Bot Application Showcase"]
+var index = 0;
 
-var slides = document.getElementsByClassName("slide"); 
-var nextArrow = document.getElementById("next");
-var previousArrow = document.getElementById("previous");
-var place = document.getElementById("place");
-var dotsContainer = document.getElementById("dotsContainer");
-var dotArray = document.getElementsByClassName("dots"); 
+var locations = [
+  { display: "ELO Bot: Pending Score Request", asset: "img/gallery/1.png" }, 
+  { display: "ELO Bot: Accepted Score Request", asset:  "img/gallery/2.png" },
+  { display: "ELO Bot: Queue Filling", asset: "img/gallery/3.png" },
+  { display: "ELO Bot: Team Picking", asset: "img/gallery/4.png" },
+  { display: "ELO Bot: Profile Command", asset: "img/gallery/5.png" },
+  { display: "Statsify (Hypixel Stat Bot): Ping", asset: "img/gallery/6.png" },
+  { display: "General Bot: Quick Math", asset: "img/gallery/7.png" },
+  { display: "Statsify (Hypixel Stat Bot): Bedwars Profile Command", asset: "img/gallery/8.png" },
+  { display: "Bot Application Showcase",  asset: "img/gallery/9.png" },
+]
 
-createDots(); 
-showSlides(index); 
+for (i = 0; i < locations.length; i++) $("#dotsContainer").append(`<span onclick="showSlide(${i})" class="dots"></span>`)
+showSlide(0);
 
-function createDots() {
-  for (i=0; i<slides.length; i++) {
-  var dot = document.createElement("span");
-  dot.className = "dots"; 
-  dotsContainer.appendChild(dot); 
-  }
-}
+function showSlide(position) {
+  if (position > locations.length - 1) index = 0;
+  else if (position < 0) index = locations.length - 1;
+  else index = position;
 
-function showSlides(x) {
-  if (x > slides.length-1) index = 0; 
-  if (x < 0) index = slides.length-1; 
+  for (i = 0; i < locations.length; i++) $(".dots").eq(i).removeClass("active")
+  $(".dots").eq(index).addClass("active")
 
-  for (i=0; i < slides.length; i++) {
-    slides[i].style.display = "none"; 
-    dotArray[i].className = "dots";  
-  }
+  const location = locations[index]
+
+  $(".slide").attr("src", location.asset)
+  $("#text-bar").find("a").html(location.display)
   
-  slides[index].style.display = "block";
-  dotArray[index].className += " activeDot"; 
-  place.innerHTML = locations[index]; 
+  if(location.url) $("#text-bar").find("a").attr("href", location.url)
+  else $("#text-bar").find("a").removeAttr("href")
 }
 
-nextArrow.onclick = function() {
-  index += 1; 
-  showSlides(index); 
-} 
+$("#next").on("click", function() {
+  index += 1;
+  showSlide(index);
+})
 
-previousArrow.onclick = function() {
-  index -= 1; 
-  showSlides(index); 
-} 
-
-dotArray[0].onclick = showSlides(1); 
+$("#previous").on("click", function() {
+  index -= 1;
+  showSlide(index);
+})
