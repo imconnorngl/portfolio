@@ -2,14 +2,14 @@ var index = 0;
 
 var locations = [
   { display: "ELO Bot: Pending Score Request", asset: "img/gallery/1.png" }, 
-  { display: "ELO Bot: Accepted Score Request", asset:  "img/gallery/2.png" },
-  { display: "ELO Bot: Queue Filling", asset: "img/gallery/3.png" },
-  { display: "ELO Bot: Team Picking", asset: "img/gallery/4.png" },
-  { display: "ELO Bot: Profile Command", asset: "img/gallery/5.png" },
-  { display: "Statsify (Hypixel Stat Bot): Ping", asset: "img/gallery/6.png" },
-  { display: "General Bot: Quick Math", asset: "img/gallery/7.png" },
+  { display: "ELO Bot: Queue Filling", asset: "img/gallery/2.png" },
+  { display: "ELO Bot: Team Picking", asset: "img/gallery/3.png" },
+  { display: "Statsify (Hypixel Stat Bot): Ping", asset: "img/gallery/4.png" },
+  { display: "Bot Application Showcase", asset: "img/gallery/5.png" },
+  { display: "General Bot: Quick Math", asset: "img/gallery/6.png" },
+  { display: "ELO Bot: Accepted Score Request", asset: "img/gallery/7.png" },
   { display: "Statsify (Hypixel Stat Bot): Bedwars Profile Command", asset: "img/gallery/8.png" },
-  { display: "Bot Application Showcase",  asset: "img/gallery/9.png" },
+  { display: "ELO Bot: Profile Command",  asset: "img/gallery/9.png" },
 ]
 
 for (i = 0; i < locations.length; i++) $("#dotsContainer").append(`<span onclick="showSlide(${i})" class="dots"></span>`)
