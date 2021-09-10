@@ -10,13 +10,12 @@ function showSlide(position) {
   })
 
   $("#slide-container > .slide").each(function (i) { 
-    if(i == index) {
-      $(this).css("display", "block")
-      $("#text-bar").find("a").html($(this).attr("alt"))
-    } else {
-      $(this).css("display", "none")
-    }
+    if(i == index) $(this).css("display", "block")
+    else $(this).css("display", "none")
   })
+
+  const slide = $("#slide-container > img").get(index)
+  $("#text-bar").find("a").html($(slide).attr("alt"))
 }
 
 for (i = 0; i <= childrenCount; i++) $("#dotsContainer").append(`<span onclick="showSlide(${i})" class="dots"></span>`)
