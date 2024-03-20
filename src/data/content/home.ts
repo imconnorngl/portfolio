@@ -3,52 +3,50 @@ import { type Skill } from "types";
 export const skills: Skill[] = [
   {
     title: "AWS",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+    icon: "aws",
   },
   {
     title: "Cloudflare",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/9/94/Cloudflare_Logo.png",
+    icon: "cloudflare",
   },
   {
     title: "Terraform",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg",
+    icon: "terraform",
   },
   {
     title: "Git",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    icon: "git",
   },
   {
     title: "Docker",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg",
+    icon: "docker",
   },
   {
     title: "GraphQL",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+    icon: "graphql",
   },
   {
     title: "NextJS",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg",
-    style: { filter: "invert(1)" },
+    icon: "nextjs-light",
   },
   {
     title: "Django",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
-    style: { filter: "brightness(0) invert(1)" },
+    icon: "django",
   },
   {
     title: "TypeScript",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    icon: "typescript",
   },
   {
     title: "JavaScript",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    icon: "javascript",
   },
   {
     title: "Python",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg",
+    icon: "python",
   },
   {
     title: "Java",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+    icon: "java",
   },
 ];

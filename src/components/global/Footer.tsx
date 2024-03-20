@@ -56,7 +56,7 @@ function Footer() {
             <div className="space-x-2 inline-flex items-center -mt-1 ml-3">
               <span>
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  src="/static/icons/services/react.svg"
                   width="26"
                   title="React"
                   alt="React's Icon"
@@ -65,7 +65,7 @@ function Footer() {
               </span>
               <span>
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg"
+                  src="/static/icons/services/nextjs.svg"
                   width="40"
                   className="invert"
                   title="NextJS"
@@ -75,7 +75,7 @@ function Footer() {
               </span>
               <span>
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                  src="/static/icons/services/tailwindcss.svg"
                   width="26"
                   title="TailwindCSS"
                   alt="TailwindCSS's Icon"

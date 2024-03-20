@@ -1,7 +1,6 @@
 import React from "react";
 import { skills } from "data/content/home";
 
-
 function Skills() {
   return (
     <div className="flex flex-col md:flex-row justify-between relative">
@@ -20,7 +19,10 @@ function Skills() {
               key={index}
               className="w-10 mx-auto flex items-center flex-col justify-center"
             >
-              <img src={item.icon} style={item.style} alt={item.title} />
+              <img
+                src={`/static/icons/services/${item.icon}.svg`}
+                alt={item.title}
+              />
               <p className="text-xs text-secondary font-bold mt-3 opacity-80">
                 {item.title}
               </p>
