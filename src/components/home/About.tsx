@@ -30,14 +30,16 @@ function Hero() {
           />
           <p className="text-l mb-5 text-center md:text-left">
             Starting my programming journey, I worked on many personal projects,
-            such as Bedwars Tinder and Statsify. I was able to enhance my skills
+            such as Bedwars Tinder and Statsify. I further enhanced my skills
             during my time at Gateshead College, where I had the opportunity to
-            work with Ryder Architecture improving some of their internal tools.
-            During this time, I gained recognition from Moonsworth – the
-            creators of Lunar Client – who offered me a position on their
-            development team. Now 20, I continue to work with Moonsworth while
-            pursuing a Bachelor’s degree in Computer Science with Web
-            Development at Northumbria University.
+            collaborate with Ryder Architecture on improving some of their
+            internal tools. At the same time, I also gained recognition from
+            Moonsworth - the creators of Lunar Client - who offered me a
+            position on their development team. During that time, I worked to
+            earn a First Class Honours degree in Computer Science with Web
+            Development from Northumbria University. Now 21, I continue work
+            full-time at Lunar Client, developing cutting-edge features for the
+            gaming community.
           </p>
           <Image
             src="/static/timeline.png"
