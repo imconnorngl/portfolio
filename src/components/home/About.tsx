@@ -37,7 +37,7 @@ function Hero() {
             Moonsworth - the creators of Lunar Client - who offered me a
             position on their development team. During that time, I worked to
             earn a First Class Honours degree in Computer Science with Web
-            Development from Northumbria University. Now 21, I continue work
+            Development from Northumbria University. Now 22, I continue work
             full-time at Lunar Client, developing cutting-edge features for the
             gaming community.
           </p>
